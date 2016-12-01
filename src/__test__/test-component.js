@@ -1,8 +1,8 @@
-import Test from 'ava';
-import React from 'react';
-import { shallow } from 'enzyme';
-
 import MyComponent from '..';
+import React from 'react';
+import Test from 'ava';
+
+import {shallow} from 'enzyme';
 
 Test('test component', t => {
   const wrapper = shallow(<MyComponent />);
