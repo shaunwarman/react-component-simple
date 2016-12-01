@@ -16,7 +16,7 @@ export default class MyComponent extends Component {
     componentDidUpdate() {}
 
     render() {
-        return <h1>Hello</h1>;
+        return <div>Hello</div>;
     }
 }
 

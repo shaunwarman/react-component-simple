@@ -1,6 +1,11 @@
-const test = require('tape');
+import Test from 'ava';
+import React from 'react';
+import { shallow } from 'enzyme';
 
-test('test component', (t) => {
-  // test component
-  t.end();
+import MyComponent from '..';
+
+Test('test component', t => {
+  const wrapper = shallow(<MyComponent />);
+
+  t.is(wrapper.contains(<div>Hello</div>), true);
 });
